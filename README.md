@@ -27,7 +27,7 @@ Sales and Trend Analysis made in SQL are [here](scripts/Sales_Analysis.sql).
 Datasets used for this analysis are provided in .csv format and can be found here: [datasets](datasets).  
 It consists of 50,000 orders, and besides the orders table, we have product and customer tables as well. Based on those datasets, I built a data model in Power BI that is additionally enriched with date and order status dimensions. The data model consists of a main fact table, Orders, and dimension tables (Products, Customers, Date, and Status) that are interconnected.
 
-![ERD](images/diagrams/ERD.PNG)  
+![ERD](Images/diagrams/ERD.PNG)  
 
 <br>
 <h1 style="text-align: center;">Executive Summary</h1>
@@ -40,7 +40,7 @@ Unlike KPIs, sales trend insights definitely seem more eye-catching. There are o
 
 <br>
 
-![Executive Summary](images/charts/Executive%20Summary.PNG)
+![Executive Summary](Images/charts/Executive%20Summary.PNG)
 
 <h1 style="text-align: center;">Deep-Dive Insights</h1>
 <h2>Key Performance Indicators</h2>
@@ -67,7 +67,7 @@ Clearly, our business is showing seasonal trends:
 These spikes are very consistent across all three years and are most likely driven by major promotional periods such as Black Friday, Cyber Monday, and the holiday shopping season, indicating that a <b>substantial portion of our annual revenue is concentrated in the final quarter of the year</b>. Because of this, our Q4 performance is critical for achieving yearly revenue targets. <br>Another interesting observation is that the <b>seasonal patterns remain stable year over year</b>, suggesting that our customer purchasing behavior is predictable. This predictability allows us to plan inventory levels, marketing campaigns, and promotional strategies more effectively.
 <br></br>
  
-![Trends](images/charts/Trends.PNG)  
+![Trends](Images/charts/Trends.PNG)  
 
 ### Average Order Value
 **Average order value(AOV)** seems to have more consistency throughout the years. Average AOV was $698. At its best, it reached $727 in September 2025, while at its lowest in March 2023, it was $659. The difference between maximum and minimum is just around 10%, so we can say that the average order value stays stable in this period, without larger fluctuations.  
@@ -82,7 +82,7 @@ Big drops in order volume, which, as if by some rule happens at the beginning of
 The category comparison shows that **Electronics** significantly outperforms all other categories in total revenue with $17,2M revenue. With a more than 49% of total revenue it takes up a large percentage of total company sales and contributes more than double the revenue of other categories. After that comes products from **Sports** and **Home & Kitchen** category that both contributed with $7,1M in revenue and at the end **Fashion** category products earned a revenue of $3,6M.  
 This indicates that customer demand is strongest in technology products and electronics category is our primary revenue driver. Looking at order volume by category, we can clearly see similarity with revenue by category which indicates that the main cause of electronics category's dominance is not higher average selling prices but much higher order volume of technology products compared to others.  
 
-![Product Category Performance](images/charts/Product%20Category%20Performance.PNG)
+![Product Category Performance](Images/charts/Product%20Category%20Performance.PNG)
 
 However, when we combine this insight with the return rate analysis in the next section, we see an important operational risk: Electronics also maintains one of the highest return rates across all years.  
 
@@ -93,8 +93,8 @@ There is one more important thing that we need to mention. We identified two pro
 
 
 <div valign="top" align="center">
-    <img height="300" alt="Products Revenue" src="images/charts/Top 10 Products.PNG" />
-    <img alt="Products Revenue" src="images/charts/Products With No Sales.PNG" />
+    <img alt="Products Revenue" src="Images/charts/Top 10 products.PNG" />
+    <img alt="Products Revenue" src="Images/charts/Products With No Sales.PNG" />
 </div><br>
 <br>
 <table align="center">
@@ -102,7 +102,7 @@ There is one more important thing that we need to mention. We identified two pro
   <tr>
     <td width="500">
        <div valign="top" align="center">
-            <img alt="Refund heat map of products" src="images/charts/Category Returns Rate.PNG" />
+            <img alt="Refund heat map of products" src="Images/charts/Category Returns Rate.PNG" />
        </div>
     </td>
     <td valign="top" width="500">
@@ -121,12 +121,12 @@ There is one more important thing that we need to mention. We identified two pro
 <h1 style="text-align: center;">Customer Performance</h1>
 
 
-![Regional Revenue](images/charts/Regional%20Revenue.PNG)  
+![Regional Revenue](Images/charts/Regional%20Revenue.PNG)  
 
 **Europe** as a region is convincingly our main revenue driver, which generated $18,2M in the period 2023-2025, which takes up more than 55% of NovaCart's total sales revenue in that period. This performance is far ahead of other regions like **North America** which brought in revenue $7,2M, and **Asia** with $4,4M. Below them remain **South America** and **Africa**, from whose customers we collected $2,3M and $0,9M.  
 Although Europe is region that we are most dependent on, countries that generated highest income are not from that region, they are from North America. USA and Canada are at least 25% ahead of European countries revenue wise. There are some regions like Asia and Africa where in most countries we don't have customers and that can be a potential chance to break into those markets. Also, in Australia we dont have customers at all, so there is potentially an expansion chance for us.  
 
-![Regional Returns](images/charts/Regional%20Return%20Rates.PNG)  
+![Regional Returns](Images/charts/Regional%20Return%20Rates.PNG)  
 
 Europe is contributing the majority of total sales, but it also maintains moderately high return rates, indicating an opportunity to improve profitability through operational optimization. We are highly dependent on this region, so we have to take that into account.  
 North America represents a well-balanced market with solid revenue and relatively low return rates, making it a strong candidate for further expansion.
