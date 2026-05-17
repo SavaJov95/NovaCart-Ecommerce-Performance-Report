@@ -1,8 +1,8 @@
-<div style="text-align: center;font-size:20px;">
+<div align="center">
     <h1>NovaCart Ecommerce Performance Report</h1>
 </div>
 
-<h1 style="text-align: center;">Company Background</h1>
+<h2 align="center">Company Background</h1>
 
 Founded in 2022, **NovaCart** is a mid-size global e-commerce company selling electronics, home goods, sports gear, and fashion accessories. Products are manufactured mostly in Asia and Eastern Europe and shipped globally. Revenue is concentrated in Europe and North America. Electronics dominate sales, while some niche accessories have very few orders.
 
@@ -22,27 +22,34 @@ SQL Queries used to inspect and clean data for this analysis can be found [here]
 Sales and Trend Analysis made in SQL are [here](scripts/Sales_Analysis.sql). 
 </br>
 </br>
-<h1 style="text-align: center;">Entity Relationship Diagram</h1>
+<h1 align="center">Entity Relationship Diagram</h1>
 
 Datasets used for this analysis are provided in .csv format and can be found here: [datasets](datasets).  
-It consists of 50,000 orders, and besides the orders table, we have product and customer tables as well. Based on those datasets, I built a data model in Power BI that is additionally enriched with date and order status dimensions. The data model consists of a main fact table, Orders, and dimension tables (Products, Customers, Date, and Status) that are interconnected.
+The dataset comprises 50,000 orders, stored across tables for orders, products, and customers. I used these datasets to build a Power BI data model, which I further enriched with date and order status dimensions. This model features a central 'Orders' fact table, interconnected with dimension tables for Products, Customers, Date, and Status.
 
 ![ERD](Images/diagrams/ERD.PNG)  
 
 <br>
-<h1 style="text-align: center;">Executive Summary</h1>
+<h1 align="center">Executive Summary</h1>
 <h2>Overview of Findings</h2>
-Looking at key performance indicators for the year 2025, there are <b>no significant changes in any of 3 indicators.</b> in neither of 3 indicators.  
+Looking at key performance indicators for 2025, there were <b>no significant changes in any of the three indicators.</b> 
 <br>
 
-While **order volume was slightly down by 0.17%** year-over-year, the other two indicators showed positive changes in 2025: **sales revenue increased by 0.25%**, and **average order value (AOV) rose by 0.42%** compared to the previous year.  
+While **order volume was slightly down by 0,17%**, the other two indicators showed positive changes compared to the previous year: **sales revenue increased by 0,25%**, and **average order value (AOV) rose by 0,42%**.  
+
 Unlike KPIs, sales trend insights definitely seem more eye-catching. There are obvious **seasonal trends** in company sales, especially the ones that are occurring **at the end of the year (November and December), when we have huge sale spikes which are followed by sudden drops in sales after the New Year.**
+Sales trend insights, unlike KPIs, are more eye-catching. Obvious **seasonal trends** exist in company sales, particularly at the end of the year (November and December), with significant spikes during the **Black Friday and the Holiday Sale** period followed by sudden drops after the New Year, in the first few months.  
+
+Revenue in 2025 reached 11,6M dollars, driven primarly by **Electronics** which contributed with **50% of total revenue**. Revenue is distributed evenly across top 10 products in our product portfolio.  
+The **Europe** as a region dominated revenue, accounted for nearly **55% of total performance**, while **North America** as a second revenue generator contributed with **21% of total revenue**.  
+
+Despite strong sales momentum, **returns remain at 6-8%, especially in Electronics**, where they are the highest, signalling an area for process improvement.
 
 <br>
 
 ![Executive Summary](Images/charts/Executive%20Summary.PNG)
 
-<h1 style="text-align: center;">Deep-Dive Insights</h1>
+<h1 align="center">Deep-Dive Insights</h1>
 <h2>Key Performance Indicators</h2>
  
 Although we processed slightly fewer orders in 2025 (-0,17%), the average order value increased 0,42%, which helped us maintain overall revenue growth for 0,25%. This is generally a positive sign, and it suggests that customers are either:
@@ -70,16 +77,16 @@ These spikes are very consistent across all three years and are most likely driv
 ![Trends](Images/charts/Trends.PNG)  
 
 ### Average Order Value
-**Average order value(AOV)** seems to have more consistency throughout the years. Average AOV was $698. At its best, it reached $727 in September 2025, while at its lowest in March 2023, it was $659. The difference between maximum and minimum is just around 10%, so we can say that the average order value stays stable in this period, without larger fluctuations.  
+Average order value(AOV) seems to have more consistency throughout the years. **Average AOV was $698. At its best, it reached $727 in September 2025, while at its lowest in March 2023, it was $659**. The difference between maximum and minimum is just around 10%, so we can say that the average order value stays stable in this period, without larger fluctuations.  
 **Average order value is showing growth in 2025 compared to previous years**, with 8 months reaching values above average. Reasons for better performance can be found either in better marketing strategies, higher prices, individual bigger order volume, or higher-priced orders.
 ### Number Of Orders  
-**Orders** closely follow sales revenue, indicating that the decline in revenue is primarily due to fewer orders rather than a drop in AOV. Order volume has highs and lows that look identical to the ones related to sales revenue, and happen in the same periods, so we can clearly conclude that there is a high correlation between sales revenue and the number of orders.  
+**Orders closely follow sales revenue, indicating that the decline in revenue is primarily due to fewer orders rather than a drop in AOV**. Order volume has highs and lows that look identical to the ones related to sales revenue, and happen in the same periods, so we can clearly conclude that there is a high correlation between sales revenue and the number of orders.  
 Big drops in order volume, which, as if by some rule happens at the beginning of the year, already in January, by halving its value from December. Decreasing continues until reaching a minimum in March. After March, it becomes more stable, and we can see moderate increases throughout the summer season. Again lower volume period comes in August and September before hitting huge spikes later in the year.
 
 <br>
-<h1 style="text-align: center;">Product Performance</h1>
+<h1 align="center">Product Performance</h1>
 
-The category comparison shows that **Electronics** significantly outperforms all other categories in total revenue with $17,2M revenue. With a more than 49% of total revenue it takes up a large percentage of total company sales and contributes more than double the revenue of other categories. After that comes products from **Sports** and **Home & Kitchen** category that both contributed with $7,1M in revenue and at the end **Fashion** category products earned a revenue of $3,6M.  
+The category comparison shows that **Electronics** significantly outperforms all other categories in total revenue with **$17,2M revenue. With a more than 49% of total revenue** it takes up a large percentage of total company sales and contributes more than double the revenue of any other category. After that comes products from **Sports** and **Home & Kitchen** category that both contributed with **$7,1M** in revenue and at the end **Fashion** category products earned a revenue of **$3,6M**.  
 This indicates that customer demand is strongest in technology products and electronics category is our primary revenue driver. Looking at order volume by category, we can clearly see similarity with revenue by category which indicates that the main cause of electronics category's dominance is not higher average selling prices but much higher order volume of technology products compared to others.  
 
 ![Product Category Performance](Images/charts/Product%20Category%20Performance.PNG)
@@ -91,10 +98,8 @@ This is generally a healthy sign for product portfolio stability because it redu
 Interestingly, out of the top 10 products, 5 of them are technology products, which again proves everything we have already said above about electronics product superiority.  
 There is one more important thing that we need to mention. We identified two products with zero sales over a three-year period: "Apple iPad Pro" and "55in OLED S95F 4K Samsung Vision Al Smart TV", indicating either a lack of demand, poor visibility, or potential data or listing issues. This represents tied-up inventory and missed revenue opportunities.
 
-
 <div valign="top" align="center">
     <img alt="Products Revenue" src="Images/charts/Top 10 products.PNG" />
-    <img alt="Products Revenue" src="Images/charts/Products With No Sales.PNG" />
 </div><br>
 <br>
 <table align="center">
@@ -107,9 +112,9 @@ There is one more important thing that we need to mention. We identified two pro
     </td>
     <td valign="top" width="500">
         <ul>
-            <li><b>Electronics</b> consistently shows the highest return rate across all periods, averaging 7.21%, which may indicate issues such as product compatibility, customer expectations, or shipping damage.
+            <li><b>Electronics</b> consistently shows the highest return rate across all periods, averaging 7.21%, which may indicate issues such as product incompatibility, unmet customer expectations, or shipping damage.
             </li>
-            <li><b>Sports</b> products, while historically having the highest return rate in 2023, show consistent improvement over time, decreasing to 6.88% in 2025. This suggests that recent product or logistics improvements may be reducing returns. 
+            <li><b>Sport</b> products, while historically having the highest return rate in 2023, show consistent improvement over time, decreasing to 6.88% in 2025. This suggests that recent product or logistics improvements may be reducing returns. 
             </li>
             <li><b>Home & Kitchen</b>, as well as <b>Fashion</b>, both maintain the lowest return rate overall, indicating stable product quality and customer satisfaction in this category.
             </li>
@@ -118,7 +123,7 @@ There is one more important thing that we need to mention. We identified two pro
   </tr>
 </table>
 <br>
-<h1 style="text-align: center;">Customer Performance</h1>
+<h1 align="center">Customer Performance</h1>
 
 
 ![Regional Revenue](Images/charts/Regional%20Revenue.PNG)  
@@ -135,7 +140,7 @@ Africa, while currently contributing the least revenue, demonstrates the lowest 
 Asia brings high risks caused by a high increase of return rate in the last year.  
 
 <br>
-<h1 style="text-align: center;">Recommendations</h1>
+<h1 align="center">Recommendations</h1>
 
 Based on the insights provided above, there are several actions towards various business segments that we can recommend to the NovaCart company.
 
