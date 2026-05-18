@@ -22,6 +22,7 @@ SQL Queries used to inspect and clean data for this analysis can be found [here]
 Sales and Trend Analysis made in SQL are [here](scripts/Sales_Analysis.sql). 
 </br>
 </br>
+
 <h1 align="center">Entity Relationship Diagram</h1>
 
 Datasets used for this analysis are provided in .csv format and can be found here: [datasets](datasets).  
@@ -31,7 +32,6 @@ The dataset comprises 50,000 orders, stored across tables for orders, products, 
 
 <br>
 <h1 align="center">Executive Summary</h1>
-<h2>Overview of Findings</h2>
 Looking at key performance indicators for 2025, there were <b>no significant changes in any of the three indicators.</b> 
 <br>
 
@@ -49,8 +49,9 @@ Despite strong sales momentum, **returns remain at 6-8%, especially in Electroni
 
 ![Executive Summary](Images/charts/Executive%20Summary.PNG)
 
+<br>
 <h1 align="center">Deep-Dive Insights</h1>
-<h2>Key Performance Indicators</h2>
+<h2 align="center">Key Performance Indicators</h2>
  
 Although we processed slightly fewer orders in 2025 (-0,17%), the average order value increased 0,42%, which helped us maintain overall revenue growth for 0,25%. This is generally a positive sign, and it suggests that customers are either:
 
@@ -59,8 +60,8 @@ Although we processed slightly fewer orders in 2025 (-0,17%), the average order 
 
 The reasons for higher AOV can be various, like seasonal promotions that encourage larger purchases or successful upselling strategies.  
 
-## Sales Trends
-### Sales Revenue  
+<h2 align="center">Sales Trends</h2>
+<h3>Sales Revenue</h3>
 Looking at these seasonal and monthly sales revenue trends, we can observe some important patterns.  
 Clearly, our business is showing seasonal trends:
 <div>
@@ -76,24 +77,25 @@ These spikes are very consistent across all three years and are most likely driv
  
 ![Trends](Images/charts/Trends.PNG)  
 
-### Average Order Value
-Average order value(AOV) seems to have more consistency throughout the years. **Average AOV was $698. At its best, it reached $727 in September 2025, while at its lowest in March 2023, it was $659**. The difference between maximum and minimum is just around 10%, so we can say that the average order value stays stable in this period, without larger fluctuations.  
-**Average order value is showing growth in 2025 compared to previous years**, with 8 months reaching values above average. Reasons for better performance can be found either in better marketing strategies, higher prices, individual bigger order volume, or higher-priced orders.
-### Number Of Orders  
-**Orders closely follow sales revenue, indicating that the decline in revenue is primarily due to fewer orders rather than a drop in AOV**. Order volume has highs and lows that look identical to the ones related to sales revenue, and happen in the same periods, so we can clearly conclude that there is a high correlation between sales revenue and the number of orders.  
+<h3>Average Order Value</h3>
+Average order value(AOV) seems to have more consistency throughout the years. <b>Average AOV was $698. At its best, it reached $727 in September 2025, while at its lowest in March 2023, it was $659</b>. The difference between maximum and minimum is just around 10%, so we can say that the average order value stays stable in this period, without larger fluctuations.  
+<b>Average order value is showing growth in 2025 compared to previous years</b>, with 8 months reaching values above average. Reasons for better performance can be found either in better marketing strategies, higher prices, individual bigger order volume, or higher-priced orders.
+<h3>Number Of Orders</h3>
+<b>Orders closely follow sales revenue, indicating that the decline in revenue is primarily due to fewer orders rather than a drop in AOV</b>. Order volume has highs and lows that look identical to the ones related to sales revenue, and happen in the same periods, so we can clearly conclude that there is a high correlation between sales revenue and the number of orders.  
 Big drops in order volume, which, as if by some rule happens at the beginning of the year, already in January, by halving its value from December. Decreasing continues until reaching a minimum in March. After March, it becomes more stable, and we can see moderate increases throughout the summer season. Again lower volume period comes in August and September before hitting huge spikes later in the year.
 
+<br>
 <br>
 <h1 align="center">Product Performance</h1>
 
 The category comparison shows that **Electronics** significantly outperforms all other categories in total revenue with **$17,2M revenue. With a more than 49% of total revenue** it takes up a large percentage of total company sales and contributes more than double the revenue of any other category. After that comes products from **Sports** and **Home & Kitchen** category that both contributed with **$7,1M** in revenue and at the end **Fashion** category products earned a revenue of **$3,6M**.  
-This indicates that customer demand is strongest in technology products and electronics category is our primary revenue driver. Looking at order volume by category, we can clearly see similarity with revenue by category which indicates that the main cause of electronics category's dominance is not higher average selling prices but much higher order volume of technology products compared to others.  
+This indicates that **customer demand is strongest in technology products and electronics category is our primary revenue driver**. Looking at order volume by category, we can clearly see similarity with revenue by category which indicates that the main cause of electronics category's dominance is not higher average selling prices but much higher order volume of technology products compared to others.  
 
 ![Product Category Performance](Images/charts/Product%20Category%20Performance.PNG)
 
 However, when we combine this insight with the return rate analysis in the next section, we see an important operational risk: Electronics also maintains one of the highest return rates across all years.  
 
-Observations from the next chart are telling us that our top 10 products by revenue all generate similar levels of revenue, indicating that sales are relatively diversified rather than dominated by a single product.  
+Observations from the next chart are telling us that **our top 10 products by revenue all generate similar levels of revenue, indicating that sales are relatively diversified rather than dominated by a single product**.  
 This is generally a healthy sign for product portfolio stability because it reduces the company's dependence on a single product, which lowers business risk.  
 Interestingly, out of the top 10 products, 5 of them are technology products, which again proves everything we have already said above about electronics product superiority.  
 There is one more important thing that we need to mention. We identified two products with zero sales over a three-year period: "Apple iPad Pro" and "55in OLED S95F 4K Samsung Vision Al Smart TV", indicating either a lack of demand, poor visibility, or potential data or listing issues. This represents tied-up inventory and missed revenue opportunities.
